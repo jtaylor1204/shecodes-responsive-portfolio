@@ -1,10 +1,12 @@
 :root {
-  --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
+  --branding-color: #ef4565;
+  --secondary-color: #d8eefe;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
-
+a{
+  text-decoration: none;
+}
 body {
   font-family: var(--default-font-family);
 }
@@ -15,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: black;
+  color: #094067;
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
@@ -37,6 +39,7 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
+  color: #5f6c7b;
 }
 
 .hero {
@@ -49,7 +52,7 @@ p {
   font-size: 36px;
   font-weight: bold;
   margin: 0;
-  color: #272142;
+  color: #094067;
 }
 
 .hero h2 {
@@ -57,6 +60,45 @@ p {
   font-weight: normal;
   line-height: 1.5;
   font-size: 24px;
+}
+/* badge icons */
+.icons{
+  display: inline-grid;
+  align-self: center;
+  padding: 1rem 1rem;
+  margin: 0 1px;
+  color: black;
+  background: #D8D8D8;
+  font-size: 12px;
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, .2);
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius: 15px 255px;
+
+}
+
+.badges{
+  padding-left: 30%;
+  padding-top: 10px;
+}
+.col-1{
+  padding:0
+}
+
+/* Animated emojis */
+.carousel {
+  height: 43px;
+  font-size: 33px;
+  width: 50%;
+  align-self: center;
+  padding-left: 47%;
+
+
+}
+.carousel-item {
+  width: 90;
+  height: 100%; 
 }
 
 .content-container {
@@ -99,7 +141,7 @@ p {
 }
 
 .btn-branding:hover {
-  color: white;
+ 
 }
 
 .btn-branding-outline {
@@ -121,8 +163,35 @@ p {
   padding: 120px 60px;
 }
 
+.profile{
+  padding-top: 50px;
+}
+
+.img-fluid{
+  height: 636px;
+  width: 636px;
+  border-radius: 70px;
+}
+
+.img-profile{
+  height: 350px;
+  width: 500px;
+  border-radius: 70px;
+}
+
 .logo {
-  max-height: 40px;
+  -webkit-transform-origin: 50% 0!important;
+  transform-origin: 50% 0!important;
+  -webkit-animation: swinging 3.5s ease-in-out forwards infinite!important;
+  animation: swinging 3.5s ease-in-out forwards infinite!important;
+  width: 100px;
+  height: 50px;
+}
+.mt-4{
+  padding-top: 10px;
+}
+.mx-auto{
+
 }
 
 nav {
@@ -143,7 +212,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #272142;
+  color: #094067;
   transition: all 100ms ease-in-out;
 }
 
@@ -168,7 +237,7 @@ footer .contact-box p {
 
 footer .email-link {
   text-decoration: none;
-  color: black;
+  color: #094067;
   font-size: 24px;
 }
 
@@ -214,4 +283,34 @@ footer .social-links a:hover {
     padding: 0;
     text-align: center;
   }
+
+  /* Logo */
+@-webkit-keyframes swinging {
+  0% {
+    -webkit-transform: rotate(10deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-5deg)
+  }
+
+  100% {
+    -webkit-transform: rotate(10deg);
+  }
+}
+
+@keyframes swinging {
+  0% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    transform: rotate(-5deg)
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
 }
