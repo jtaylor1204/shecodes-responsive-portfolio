@@ -4,6 +4,7 @@
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
+/* Elements */
 a{
   text-decoration: none;
 }
@@ -41,6 +42,7 @@ p {
   line-height: 30px;
   color: #5f6c7b;
 }
+/* Homepage content */
 
 .hero {
   background: var(--secondary-color);
@@ -88,17 +90,51 @@ p {
 
 /* Animated emojis */
 .carousel {
-  height: 43px;
+  height: 50px;
   font-size: 33px;
-  width: 50%;
+  width: 52%;
   align-self: center;
-  padding-left: 47%;
+  padding-left: 49%;
 
 
 }
 .carousel-item {
-  width: 90;
-  height: 100%; 
+  width: 100%;
+  height: 115%; 
+}
+/* alphabetized */
+
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding:hover{
+  background: #ffffff;
+  color: var(--branding-color);
+  border-color: (var(--branding-color));
+
+}
+
+
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.btn-branding-outline:hover {
+  background: var(--branding-color);
+  color: white;
 }
 
 .content-container {
@@ -130,33 +166,12 @@ p {
   margin: 30px;
 }
 
-.btn-branding {
-  background: var(--branding-color);
-  border-radius: 4px;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
+.experience{
+  text-align: center;
 }
 
-.btn-branding:hover {
- 
-}
-
-.btn-branding-outline {
-  color: var(--branding-color);
-  border: 1px solid var(--branding-color);
-  border-radius: 4px;
-  font-size: 18px;
-  text-decoration: none;
-  line-height: 27px;
-  padding: 15px 30px;
-}
-
-.btn-branding-outline:hover {
-  background: var(--branding-color);
-  color: white;
+.experience-list{
+  color: #5f6c7b;
 }
 
 .project-desciption {
@@ -165,6 +180,14 @@ p {
 
 .profile{
   padding-top: 50px;
+}
+.resume{
+  height: 900px;
+  width: 9000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .img-fluid{
@@ -180,19 +203,17 @@ p {
 }
 
 .logo {
-  -webkit-transform-origin: 50% 0!important;
-  transform-origin: 50% 0!important;
-  -webkit-animation: swinging 3.5s ease-in-out forwards infinite!important;
-  animation: swinging 3.5s ease-in-out forwards infinite!important;
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+  animation: swinging 3.5s ease-in-out forwards infinite;
   width: 100px;
   height: 50px;
 }
 .mt-4{
   padding-top: 10px;
 }
-.mx-auto{
-
-}
+/* Nav styles */
 
 nav {
   padding: 20px 0;
@@ -220,6 +241,8 @@ nav a:hover,
 nav li.active a {
   color: var(--branding-color);
 }
+
+/* Footer styles */
 
 footer {
   margin: 60px 0;
@@ -260,6 +283,8 @@ footer .social-links a:hover {
   background: var(--branding-color);
 }
 
+/* Media queries */
+
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
@@ -278,39 +303,31 @@ footer .social-links a:hover {
     text-align: center;
     padding: 0;
   }
-
-  .project-desciption {
-    padding: 0;
-    text-align: center;
-  }
-
-  /* Logo */
-@-webkit-keyframes swinging {
-  0% {
-    -webkit-transform: rotate(10deg);
-  }
-
-  50% {
-    -webkit-transform: rotate(-5deg)
-  }
-
-  100% {
-    -webkit-transform: rotate(10deg);
-  }
+}
+/* logo */
+.swing {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  float:left;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.swing img {
+  border: 5px solid #f8f8f8;
+  display: block;
+}
+.swing:after{
+  content: '';
+  position: absolute;  
+  width: 20px; height: 20px;  
+  border: 1px solid #999;
+  top: -10px; left: 50%;
+  z-index: 0;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(45deg);
 }
 
-@keyframes swinging {
-  0% {
-    transform: rotate(10deg);
-  }
-
-  50% {
-    transform: rotate(-5deg)
-  }
-
-  100% {
-    transform: rotate(10deg);
-  }
-}
-
+@keyframes swing {
+  0% { transform: rotate(3deg); }
+  100% { transform: rotate(-3deg); }
 }
