@@ -137,6 +137,22 @@ p {
   color: white;
 }
 
+.case-study-img{
+  width: 400px;
+  height: 400px;
+  position:absolute;
+  top: 135px;
+  z-index: 1;
+  padding-right: 15px;
+}
+.case-study-img-2{
+  width: 500px;
+  height: 500px;
+  position:absolute;
+  top: 200px;
+  z-index: 2;
+}
+
 .content-container {
   padding: 60px 20px;
 }
@@ -303,6 +319,33 @@ footer .social-links a:hover {
     text-align: center;
     padding: 0;
   }
+}
+
+.section-hdg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+ 
+}
+
+.section-hdg-text{
+  font-size: 33px !important;
+}
+.slides{
+  
+}
+.title-img{
+  position: absolute;
+  top: 190px;
+  size: 400px;
+  transform: rotate(5deg);
+  z-index: 1;
+}
+
+.ux-title{
+  
 }
 /* logo */
 .swing {
