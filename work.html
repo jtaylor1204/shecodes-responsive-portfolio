@@ -36,7 +36,7 @@
      <!-- Navbar -->
      <div class="container">
       <nav class="d-flex justify-content-between">
-        <div class="swing">
+        <div class="swing" class="d-none d-md-block" >
         <a href="index.html" title="Homepage">
           <img
             src="images/Final Site Logo copy.png"
@@ -46,13 +46,13 @@
         </a>
       </div>
         <ul>
-          <li >
+          <li class="active">
             <a href="index.html" title="Homepage"> Home</a>
           </li>
           <li>
             <a href="about.html" title="About Jaida"> About</a>
           </li>
-          <li class="active">
+          <li>
             <a href="work.html" title="Jaida's work"> Work</a>
           </li>
           <li>
@@ -60,6 +60,10 @@
           </li>
           <li>
             <a href="contact.html" title="Contact Jaida"> Contact</a>
+          </li>
+          <li>
+            <a href="https://www.fiverr.com/jaidarenee?up_rollout=true" class="btn btn-branding" title="Contact me"
+          >Book me for your project! </a>
           </li>
         </ul>
       </nav>
@@ -73,38 +77,15 @@
         <div class="bookmarks">
           <h3>Jump to:</h3>
           <ul>
-            <li class="jump-list"><a href="#websites">Websites</a></li>
-           <li class="jump-list"><a href="#javascript-apps">Javascript Apps</a></li> 
-           <li class="jump-list"><a href="#uiux-case-studies">UX/UI Case Studies</a></li> 
-           <li class="jump-list"><a href="#curriculum-writing">Writing, Design & Curriculum Samples</a></li> 
+            <li><a class="jump-list" href="#websites">Websites</a></li>
+           <li><a  class="jump-list" href="#javascript-apps">Javascript Apps</a></li> 
+           <li><a  class="jump-list" href="#uiux-case-studies">UX/UI Case Studies</a></li> 
+           <li><a   class="jump-list" href="#curriculum-writing">Writing, Design & Curriculum Samples</a></li> 
           </ul>
         </div>
         <!-- Samples carousel -->
-        <div class ="d-none d-md-flex">
-          <div class="row">
         
-            <div class="col-4">
-                <img class="work-img" src="images/Jaida Taylor - EPK Samples/1.png" alt="...">
                 
-              </div>
-              
-            
-                <div class="col-4">
-                <img class="work-img" src="images/Jaida Taylor - EPK Samples/2.png" alt="...">
-                
-                </div>
-                
-            
-             
-                  <div class="col-4">
-                  <img class="work-img" src="images/Jaida Taylor - EPK Samples/3.png" alt="...">
-            
-                  </div>
-                  </div>
-                </div>
-                
-                
-        
         <div id="websites" class="section-hdg">
           <h2 class="section-hdg-text">Websites</h2>
         </div>
@@ -112,32 +93,14 @@
         
         <div class="row">
           <div class="col-md-6 mb-4">
+          <div class= "work-thumbnail">
             <img
-              src="images/Portfolio Thumbs/Portfolio Thumbs/tindog.svg"
-              class="img-fluid mb-3"
+              src="images/gifs/tindog.gif"
               alt="Tindog project preview"
             />
-            <h3 class="text-center m-0">TinDog Landing Page</h3>
-        <div class="d-none d-lg-block" style="margin-left: 185px;">
-              <div class="col-2 justify-content-center"  class="badges" style="display:inline-block;" >
-                <div class="icons ">
-                <i>HTML</i>
-              </div>
-              </div>
-              <div class="col-2 justify-content-center"  class="badges" style="display:inline-block;" >
-              <div class="icons">
-                <i>CSS</i>
-              </div>
-              </div>
-              <div class="col-2 justify-content-center"  class="badges" style="display:inline-block;" >
-                <div class="icons">
-                  <i>Bootstrap</i>
-                </div>
-              </div>
             </div>
-           
-            
-    
+            <h3 class="text-center m-0">TinDog Landing Page</h3>
+          
             <div class="text-center mt-4 mb-5">
               <a
                 href="https://tindog.jaidataylor.tech/"
@@ -149,31 +112,13 @@
             </div>
             
             <div class="col-md-6 mb-4">
+              <div class= "work-thumbnail">
               <img
-                src="images/Portfolio Thumbs/Portfolio Thumbs/pupspa.svg"
-                class="img-fluid mb-3"
+                src="images/gifs/pupspa.gif"
                 alt="pup spa project preview"
               />
+              </div>
               <h3 class="text-center m-0">PupSpa Landing Page</h3>
-
-              <div class="d-none d-lg-block" style="margin-left: 185px;">
-                <div class="col-2 justify-content-center"  class="badges" style="display:inline-block;" >
-                <div class="icons ">
-                  <i>HTML</i>
-                </div>
-              </div>
-              <div class="col-2 justify-content-center"  class="badges" style="display:inline-block;" >
-                <div class="icons">
-                  <i>CSS</i>
-                </div>
-                </div>
-                <div class="col-2 justify-content-center"  class="badges" style="display:inline-block;" >
-                  <div class="icons">
-                    <i>Bootstrap</i>
-                  </div>
-              </div>
-              </div>
-            
               <div class="text-center mt-4 mb-5">
                 <a
                   href="https://pupspa.jaidataylor.tech/"
@@ -184,36 +129,40 @@
               </div>
               </div>
           </div>
+          
           <!-- End of websites first row -->
             <div id="javascript-apps" class="section-hdg">
               <h2 class="section-hdg-text">Javascript Apps</h2>
             </div>
-            <div class="row">
-          <div class="col-md-6 mb-4">
-            <img
-              src="images/Portfolio Thumbs/Portfolio Thumbs/task manager.svg"
-              class="img-fluid mb-3"
-              alt="Weather project preview"
-            />
-            <h3 class="text-center m-0">Task Manager App</h3>
 
-            <div class="d-none d-lg-block" style="margin-left: 185px;">
-            <div class="col-2 justify-content-center"  class="badges" style="display:inline-block;" >
-              <div class="icons ">
-                <i>HTML</i>
-              </div>
-            </div>
-            <div class="col-2 justify-content-center"  class="badges" style="display:inline-block;" >
-              <div class="icons">
-                <i>CSS</i>
-              </div>
-              </div>
-              <div class="col-2 justify-content-center"  class="badges" style="display:inline-block;" >
-                <div class="icons">
-                  <i>Javascript</i>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div class= "work-thumbnail">
+                <img
+                  src="images/gifs/keeperapp.gif"
+                  alt="keeper app preview"
+                />
                 </div>
-            </div>
+                <h3 class="text-center m-0">Keeper App</h3>
+    
+                <div class="text-center mt-4 mb-5">
+                  <a
+                    href="https://jtaylor1204.github.io/JWD-Final-Project/"
+                    class="btn btn-branding"
+                    target="_blank"
+                    >< Launch Project/></a
+                  >
+                </div>
+              </div>
+          
+              <div class="col-md-6 mb-4">
+                <div class= "work-thumbnail">
+            <img
+              src="images/gifs/task manager.gif"
+              alt="task manager project preview"
+            />
           </div>
+            <h3 class="text-center m-0">Task Manager App</h3>
           
             <div class="text-center mt-4 mb-5">
               <a
@@ -224,52 +173,60 @@
               >
             </div>
           </div>
-          
+        </div>
+          <!-- end of javascript first row -->
+          <div class="row">
           <div class="col-md-6 mb-4">
+            <div class= "work-thumbnail">
             <img
-              src="images/Portfolio Thumbs/Portfolio Thumbs/random name.svg"
-              class="img-fluid"
-              alt="name generator project preview"
-            />
-            <h3 class="text-center m-0">Random Name Generator</h3>
-
-           
-            <div class="d-none d-lg-block" style="margin-left: 235px;">
-              <div class="col-8 justify-content-center"  class="badges" >
-                <div class="icons" >
-                  <i>Javascript</i>
-                </div>
-              </div>
-              </div>
+              src="images/gifs/rockpaperscissors(500 × 307 px).gif"
               
-            
+              alt="rock paper scissors project preview"
+            />
+          </div>
+            <h3 class="text-center m-0">Rock Paper Scissors Game</h3>
+
             <div class="text-center mt-4 mb-5">
               <a
-                href="https://jtaylor1204.github.io/Random-Name-Generator/"
+                href="https://jtaylor1204.github.io/Rock-Paper-Scissors/"
                 class="btn btn-branding"
                 target="_blank"
                 > < Launch Project/></a
               >
             </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class= "work-thumbnail">
+              <img
+                src="images/gifs/randomname.gif"
+                
+                alt="name generator project preview"
+              />
+            </div>
+              <h3 class="text-center m-0">Random Name Generator</h3>
+  
+              <div class="text-center mt-4 mb-5">
+                <a
+                  href="https://jtaylor1204.github.io/Random-Name-Generator/"
+                  class="btn btn-branding"
+                  target="_blank"
+                  > < Launch Project/></a
+                >
+              </div>
           </div>
-          </div>
+        </div>
 
-                    <!-- End of js apps first row -->
+                    <!-- End of js apps second row -->
           <div class="row">
           <div class="col-md-6 mb-4">
+            <div class= "work-thumbnail">
+          
             <img
-              src="images/Portfolio Thumbs/Portfolio Thumbs/dicee game.svg"
-              class="img-fluid"
-              alt="dicee project preview"
-            />
-            <h3 class="text-center m-0">Dicee Game</h3>
-            <div class="d-none d-lg-block" style="margin-left: 235px;">
-            <div class="col-8 justify-content-center"  class="badges" >
-                <div class="icons" >
-                  <i>Javascript</i>
-                </div>
-                </div>
+              src="images/gifs/diceegif.gif"
+              alt="dicee project preview" />
             </div>
+           
+            <h3 class="text-center m-0">Dicee Game</h3>
   
               <div class="text-center mt-4 mb-5">
                 <a
@@ -282,20 +239,13 @@
             </div>
             
               <div class="col-md-6 mb-4">
+                <div class= "work-thumbnail">
                 <img
-              src="images/Portfolio Thumbs/Portfolio Thumbs/drum kit.svg"
-              class="img-fluid"
+              src="images/gifs/drumkit.gif"
               alt="drum kit project preview"
             />
-            <h3 class="text-center m-0">Drum Kit</h3>
-            <div class="d-none d-lg-block" style="margin-left: 235px;">
-            <div class="col-8 justify-content-center"  class="badges" >
-                <div class="icons" >
-                  <i>Javascript</i>
-                </div>
-              </div>
-              </div>
-              
+          </div>
+            <h3 class="text-center m-0">Drum Kit</h3>  
             <div class="text-center mt-4 mb-5">
               <a
                 href="https://jtaylor1204.github.io/Drum-Kit/"
@@ -306,7 +256,7 @@
             </div>
           </div>
         </div>
-                            <!-- End of js apps second row -->
+                            <!-- End of js apps third row -->
 
         <div id="uiux-case-studies" class="section-hdg">
           <h2 class="section-hdg-text">UX/UI Case Studies</h2>
@@ -314,11 +264,13 @@
 
             <div class="row">
               <div class="col-lg d-flex justify-content-center">
+                <div class= "work-thumbnail">
                     <img
-                      src="images/googlecasestudy.svg"
-                      class="img-fluid"
+                      src="images/work google pic.png"
                       alt="uxui preview"
+                      style="padding-right: 85px;"
                     />
+                  </div>
                     </div>
                     <h3 class="text-center m-0">Google Classroom Case Study</h3>
                     <div class="row" class="section-hdg">
@@ -345,11 +297,12 @@
                 </div>
                 <div class="row">
           <div class="col-md-6 mb-4">
+            <div class= "work-thumbnail">
                 <img
-                  src="images/Portfolio Thumbs/Portfolio Thumbs/indie.svg"
-                  class="img-fluid"
+                  src="images/writing samples pic.png"
                   alt="writing projects preview"
                 />
+            </div>
                 <h3 class="text-center m-0">Writing & Design Samples</h3>
       
                 
@@ -365,17 +318,18 @@
             
               
                 <div class="col-md-6 mb-4">
+                  <div class= "work-thumbnail">
                 <img
-                  src="images/Portfolio Thumbs/Portfolio Thumbs/indie (2).svg"
-                  class="img-fluid"
+                  src="images/curriculum pic.png"
                   alt="curriculum preview"
                 />
+                </div>
                 <h3 class="text-center m-0">Curriculum Design Samples</h3>
     
                 
                   <div class="text-center mt-4 mb-5">
                     <a
-                      href="https://docs.google.com/presentation/d/e/2PACX-1vQhi2fcvK2Wf0ncyVDiweI-1t1lzIyjwFyZ0iYnPlVpC4pymTqLNWn9iuQBwwT2x0k912u_ZsCMfiiv/pub?start=false&loop=false&delayms=3000"
+                      href="https://www.canva.com/design/DAFURY3Z3r0/1hqPk9Akafn-CVHCpyNv9g/view?utm_content=DAFURY3Z3r0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
                       class="btn btn-branding"
                       target="_blank"
                       > < View Curriculum Portfolio/></a
@@ -387,64 +341,69 @@
             
          
 
-    <footer>
-      <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
-        <div>
-          <h3>Get in Touch</h3>
-          <p class="text-muted">Open to chats, collaborations, and taco dates.</p>
-        </div>
-        <div>
-          <a
-            href="contact.html"
-            class="btn btn-branding"
-            title="Contact Jaida"
-          >
-          < Contact me/>
-          </a>
-        </div>
-      </div>
-      <div class="d-flex justify-content-center mb-5">
-        <a
-          href="mailto:jaidataylor4@gmail.com"
-          class="email-link"
-          title="Email Jaida"
-        >
-          jaidataylor4@gmail.com
-        </a>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a
-          href="https://www.github.com/jtaylor1204"
-          target="_blank"
-          title="GitHub Profile"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-        <a
-          href="https://www.instragram.com/taylored.tech"
-          target="_blank"
-          title="instragram Profile"
-        >
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/jaidataylor"
-          target="_blank"
-          title="Linkedin Profile"
-        >
-        <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-      </div>
-      <p class="text-center mt-5">
-        👉🏾 This website was coded by Jaida Taylor, and is
-        <a
-          href="https://github.com/jtaylor1204/shecodes-responsive-portfolio"
-          target="_blank"
-        >
-          open-sourced.
-        </a>
-      </p>
-    </footer>
+                <footer>
+                  <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+                    <div>
+                      <h3>Get in Touch</h3>
+                      <p style="color:black">Open to chats, collaborations, and taco dates.</p>
+                    </div>
+                    <div>
+                      <a
+                        href="contact.html"
+                        class="btn btn-branding"
+                        title="Contact Jaida"
+                        style="border-color: black; background-color: #053567; color: white"
+                      >
+                      < Contact me/>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center mb-5">
+                    <a
+                      href="mailto:jaidataylor4@gmail.com"
+                      class="email-link"
+                      title="Email Jaida"
+                    >
+                      jaidataylor4@gmail.com
+                    </a>
+                  </div>
+                  <div class="social-links d-flex justify-content-center">
+                    <a
+                      href="https://www.github.com/jtaylor1204"
+                      target="_blank"
+                      title="GitHub Profile"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://www.instragram.com/taylored.tech"
+                      target="_blank"
+                      title="instragram Profile"
+                    >
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/jaidataylor"
+                      target="_blank"
+                      title="Linkedin Profile"
+                    >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                  <p class="text-center mt-5">
+                    👉🏾 This website was coded by Jaida Taylor, and is
+                    <a
+                      href="https://github.com/jtaylor1204/shecodes-responsive-portfolio"
+                      target="_blank"
+                    >
+                      open-sourced.
+                    </a>
+                  </p>
+                </footer>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    
+    <script src="js/descriptions.js"></script>  
+    <script src="js/index.js"></script>
   </body>
 </html>
 

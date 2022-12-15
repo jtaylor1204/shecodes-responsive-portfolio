@@ -1,11 +1,12 @@
 :root {
-  --branding-color: #ef4565;
-  --secondary-color: #d8eefe;
+  --branding-color:  #D5CFCF;
+  --secondary-color: #053567;
   --heading-font-family: "Playfair Display", serif;
-  --default-font-family: "Poppins", sans-serif;
+  --default-font-family: 'Montserrat', sans-serif;
 }
+
 /* Elements */
-a{
+a {
   text-decoration: none;
 }
 body {
@@ -18,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #094067;
+  color: #053567;
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
@@ -40,12 +41,12 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
-  color: #5f6c7b;
+  color: black;
 }
 /* Homepage content */
 
 .hero {
-  background: var(--secondary-color);
+  
   text-align: center;
   padding: 80px 20px;
 }
@@ -54,7 +55,7 @@ p {
   font-size: 36px;
   font-weight: bold;
   margin: 0;
-  color: #094067;
+  color: #053567;
 }
 
 .hero h2 {
@@ -104,14 +105,11 @@ p {
 }
 /* alphabetized */
 
-.badges{
-  
-}
 
 .btn-branding {
   background: var(--branding-color);
   border-radius: 4px;
-  color: white;
+  color: var(--secondary-color);
   text-decoration: none;
   font-size: 18px;
   line-height: 27px;
@@ -119,16 +117,17 @@ p {
 }
 
 .btn-branding:hover{
-  background: #ffffff;
-  color: var(--branding-color);
+  background: #053567;
+  color: #ffffff;
   border-color: (var(--branding-color));
 
 }
 
 
 .btn-branding-outline {
-  color: var(--branding-color);
-  border: 1px solid var(--branding-color);
+  color: var(--secondary-color);
+  border: 1px solid;
+  border-color: black;
   border-radius: 4px;
   font-size: 18px;
   text-decoration: none;
@@ -138,7 +137,7 @@ p {
 
 .btn-branding-outline:hover {
   background: var(--branding-color);
-  color: white;
+  color: black;
 }
 
 .case-study-img{
@@ -196,6 +195,7 @@ p {
 
 .project-desciption {
   padding: 120px 60px;
+  margin-top: -120px;
 }
 
 .profile{
@@ -209,10 +209,16 @@ p {
   margin-right: auto;
   width: 50%;
 }
+.work-info{
+  background-color: #5f6c7b;
+}
 
-.work-img{
-  width: 400px;
-  height: 600px;
+ .work-thumbnail{
+  padding-left: 8%;
+ }
+.work-thumbnail img {
+  width: 500px;
+  height: 307px;
 }
 
 #workCarousel{
@@ -221,15 +227,15 @@ p {
 }
 
 .img-fluid{
-  height: 636px;
-  width: 636px;
-  border-radius: 70px;
+  height: 400px;
+  width: 500px;
+  border-radius: 30px;
 }
 
 .jump-list{
   font-size: 20px;
   list-style: none;
-  color:#ef4565;
+  color:black;
 }
 
 .logo {
@@ -280,7 +286,8 @@ footer {
 }
 
 footer .contact-box {
-  background: var(--secondary-color);
+  background: var(--branding-color);
+  color: #ffffff;
   padding: 30px 120px;
   border-radius: 10px;
 }
@@ -349,6 +356,7 @@ footer .social-links a:hover {
   margin-right: auto;
   width: 50%;
   text-align: center;
+  margin-bottom: 20px;
  
 }
 
