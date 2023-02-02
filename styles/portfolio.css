@@ -1,6 +1,7 @@
 :root {
   --branding-color:  #D5CFCF;
   --secondary-color: #053567;
+  --tertiary-color: #D4A658;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: 'Montserrat', sans-serif;
 }
@@ -40,12 +41,107 @@ h3 {
   font-size: 48px;
 }
 
-p {
+.text-muted{
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
   color: black;
 }
+/* Overlay Section */
+#hover-btns{
+  padding-top: 0;
+}
+.hover-btn {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 1rem;
+
+  padding: 15px 30px;
+}
+
+.hover-btn:hover{
+  background: #053567;
+  color: #fff;
+  border-color: (var(--branding-color));
+
+}
+
+.hover-icon{
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+  padding: 2%;
+}
+.hover-icon:hover{
+  
+  color:#fff;
+}
+.hover-text{
+  padding: 5%;
+  font-size: 16px;
+  text-align: center;
+}
+.djchase-hover,
+.tindog-hover,
+  .jammmin-hover,
+  .ravenous-hover,
+  .keeper-hover,
+  .taskmanager-hover,
+  .dicee-hover,
+  .random-hover{
+  position: absolute;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: var(--tertiary-color) ;
+  }
+  #jammmin:hover .jammmin-hover{
+    opacity: 1;
+  }
+  #ravenous:hover .ravenous-hover{
+    opacity: 1;
+  }
+  #keeper:hover .keeper-hover{
+    opacity: 1;
+  }
+  #taskmanager:hover .taskmanager-hover{
+    opacity: 1;
+  }
+  #dicee:hover .dicee-hover{
+    opacity: 1;
+  }
+  #random:hover .random-hover{
+    opacity: 1;
+  }
+  #djchase:hover .djchase-hover{
+    opacity: 1;
+  }
+  #tindog:hover .tindog-hover{
+    opacity: 1;
+  }
+
+  #djchase,
+  #tindog,
+  #jammmin,
+  #ravenous,
+  #keeper,
+  #taskmanager,
+  #dicee,
+  #random{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+
+  }
+
 /* Homepage content */
 
 .hero {
@@ -196,9 +292,9 @@ p {
   font-family: var(--default-font-family);
 }
 
-.content p {
+/* .content p {
   font-size: 14px;
-}
+} */
 
 .content {
   margin: 30px;
@@ -376,6 +472,31 @@ footer .social-links a:hover {
     display: none;
   }
 } 
+@media only screen and (max-width:1000px) {
+  
+  .hover-text{
+    display: none;
+  }
+  #hover-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+  }
+ 
+} 
+
+
+@media only screen and (max-width:1400px) {
+  
+  .hover-text{
+    font-size: 14px;
+  }
+}
+
+
+
 
 
 .section-hdg{
